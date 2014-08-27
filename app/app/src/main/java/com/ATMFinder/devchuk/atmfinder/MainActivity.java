@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends Activity {
@@ -37,5 +39,10 @@ public class MainActivity extends Activity {
 
     public void buttonOnClick(View v) {
         // do something when the button is clicked
+        Button button = (Button) v;
+        button.setText("I've been clicked foo!");
+
+        TextView myTextView = (TextView) findViewById(R.id.textView);
+        myTextView.setText("I have loved the stars too fondly to be fearful of the night.");
     }
 }
