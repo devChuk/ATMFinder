@@ -47,10 +47,5 @@ public class SearchBarActivity extends Activity {
     public void returntoHome(View view) {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
-        /*
-        EditText editText = (EditText) findViewById(R.id.edit_message);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-         */
     }
 }
