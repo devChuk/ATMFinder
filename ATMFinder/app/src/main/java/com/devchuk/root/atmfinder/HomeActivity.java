@@ -1,12 +1,16 @@
 package com.devchuk.root.atmfinder;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class HomeActivity extends Activity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
