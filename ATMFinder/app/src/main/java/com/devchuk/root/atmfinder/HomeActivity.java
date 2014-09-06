@@ -16,6 +16,13 @@ public class HomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        TextView txt = (TextView) findViewById(R.id.textView);
+        TextView txt2 = (TextView) findViewById(R.id.textView2);
+        TextView txt3 = (TextView) findViewById(R.id.textView3);
+        Typeface font = Typeface.createFromAsset(getAssets(), "Mockup.ttf");
+        txt.setTypeface(font);
+        txt2.setTypeface(font);
+        txt3.setTypeface(font);
     }
 
 
