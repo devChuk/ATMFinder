@@ -31,7 +31,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textColor="#ffffffff"
-        style="bold" />
+        style="bold"
+        android:enabled="false" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -41,7 +42,8 @@
         android:layout_alignTop="@+id/imageButton"
         android:layout_toRightOf="@+id/textView"
         android:layout_toEndOf="@+id/textView"
-        android:background="#B8BF72" />
+        android:background="#B8BF72"
+        android:clickable="false" />
 
     <TextView
         android:layout_width="wrap_content"
