@@ -7,12 +7,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 
 public class SearchBarActivity extends Activity {
-
-    private boolean touched = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +47,10 @@ public class SearchBarActivity extends Activity {
     public void returntoHome(View view) {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
+        /*
+        EditText editText = (EditText) findViewById(R.id.edit_message);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+         */
     }
-
-
 }
