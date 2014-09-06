@@ -20,7 +20,8 @@
         android:layout_toStartOf="@+id/textView"
         android:layout_below="@+id/textView"
         android:layout_toLeftOf="@+id/textView"
-        android:background="#B8BF72" />
+        android:background="#B8BF72"
+        android:onClick="findClick" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,7 +44,8 @@
         android:layout_toRightOf="@+id/textView"
         android:layout_toEndOf="@+id/textView"
         android:background="#B8BF72"
-        android:clickable="false" />
+        android:clickable="false"
+        android:onClick="saveClick" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,7 +56,8 @@
         android:textColor="#FFFFFF"
         android:layout_alignTop="@+id/textView3"
         android:layout_alignLeft="@+id/imageButton"
-        android:layout_alignStart="@+id/imageButton" />
+        android:layout_alignStart="@+id/imageButton"
+        android:onClick="findClick" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,6 +69,7 @@
         android:layout_marginRight="17dp"
         android:layout_below="@+id/imageButton2"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="saveClick" />
 
 </RelativeLayout>

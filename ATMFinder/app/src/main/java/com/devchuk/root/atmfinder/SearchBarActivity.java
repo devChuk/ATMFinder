@@ -10,28 +10,26 @@ import android.view.View;
 import android.widget.TextView;
 
 
-public class HomeActivity extends Activity {
+public class SearchBarActivity extends Activity {
 
-
+    private boolean touched = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_search_bar);
         TextView txt = (TextView) findViewById(R.id.textView);
         TextView txt2 = (TextView) findViewById(R.id.textView2);
-        TextView txt3 = (TextView) findViewById(R.id.textView3);
         Typeface font = Typeface.createFromAsset(getAssets(), "Mockup.ttf");
         txt.setTypeface(font);
         txt2.setTypeface(font);
-        txt3.setTypeface(font);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home, menu);
+        getMenuInflater().inflate(R.menu.search_bar, menu);
         return true;
     }
 
@@ -47,17 +45,10 @@ public class HomeActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void findClick(View view) {
-        Intent intent = new Intent(this, SearchBarActivity.class);
-        /*
-        EditText editText = (EditText) findViewById(R.id.edit_message);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-         */
+    public void returntoHome(View view) {
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 
-    public void saveClick(View view) {
-        // Do something in response to button
-    }
+
 }
