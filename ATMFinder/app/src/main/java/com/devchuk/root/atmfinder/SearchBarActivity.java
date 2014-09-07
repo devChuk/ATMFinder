@@ -48,4 +48,9 @@ public class SearchBarActivity extends Activity {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
+
+    public void currentLoc(View view) {
+        EditText search = (EditText) findViewById(R.id.editText);
+        search.setText("Current Location");
+    }
 }

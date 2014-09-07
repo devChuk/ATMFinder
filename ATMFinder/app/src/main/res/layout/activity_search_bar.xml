@@ -43,7 +43,8 @@
         android:layout_toEndOf="@+id/textView"
         android:src="@drawable/current"
         android:layout_alignTop="@+id/editText"
-        android:layout_toRightOf="@+id/textView" />
+        android:layout_toRightOf="@+id/textView"
+        android:onClick="currentLoc" />
 
     <ImageButton
         android:layout_width="wrap_content"
