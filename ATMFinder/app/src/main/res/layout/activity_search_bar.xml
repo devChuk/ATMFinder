@@ -74,15 +74,4 @@
         android:layout_above="@+id/seekBar"
         android:layout_centerHorizontal="true" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton3"
-        android:src="@drawable/jumboreturn"
-        android:layout_below="@+id/seekBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:background="#B8BF72"
-        android:onClick="returntoHome" />
-
 </RelativeLayout>
